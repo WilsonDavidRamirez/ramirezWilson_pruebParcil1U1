@@ -11,12 +11,12 @@ def principal():
 
 #funcion para cargar el html/pagina del admin
 @app.route("/admin")
-def principal():
+def administrador():
     return render_template("admin.html")
 
 #funcion para cargar el html/pagina del tienda
 @app.route("/tienda")
-def principal():
+def tienda():
     return render_template("tienda.html")
 
 #Ejecucion del main
