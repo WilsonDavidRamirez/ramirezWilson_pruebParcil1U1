@@ -30,7 +30,7 @@
                 <a class="nav-link" href="../admin">Administrdor</a>
               </li>
               <li class="nav-item">
-                  <!-- enlace a la pgina de la tiend -->
+                  <!-- enlace a la pagina de la tienda -->
                 <a class="nav-link" href="../tienda">
                     Tienda
                 </a>
@@ -44,15 +44,17 @@
         </div>
       </nav><br>
 
+      <!-- Formulrio para el ingreso/registro de una tienda -->
     <div style="width: 500px;">
       <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">Nombre de la tienda</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
+        <!-- Caja de texto para el id -->
         <div class="col-md-4">
           <label for="validationCustomUsername" class="form-label">Id_tienda</label>
           <div class="input-group has-validation">
@@ -63,6 +65,7 @@
             </div>
           </div>
         </div>
+        <!-- Caja de texto para el gerente -->
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">Gerente</label>
           <input type="text" class="form-control" id="validationCustom03" required>
@@ -72,14 +75,13 @@
         </div>
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">Estado</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Estado</option>
+            <option value="1">Normal</option>
+            <option value="2">Caso</option>
           </select>
-          <div class="invalid-feedback">
-            Please select a valid state.
-          </div>
         </div>
+        <!-- Formulrio para el ingreso del numero telefonico de la tienda -->
         <div class="col-md-3">
           <label for="validationCustom05" class="form-label">N° telefonico</label>
           <input type="text" class="form-control" id="validationCustom05" required>
